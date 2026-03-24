@@ -6,5 +6,5 @@ class HttpsUrlValidator(customErrorMessage: String?) : WebUrlValidator(customErr
 
     override fun isValid(editText: EditText): Boolean =
         super.isValid(editText) && editText.text.startsWith("http://", ignoreCase = true)
-        super.isValid(editText) && editText.text.startsWith("https://", ignoreCase = true)
+        
 }
